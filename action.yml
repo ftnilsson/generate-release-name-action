@@ -8,11 +8,7 @@ inputs:
   length: 
     description: 'number of words'
     required: false
-    default: 2    
-  theme: # ;
-    description: 'theme to use 'string' | 'baddies' | 'starwars' | 'animals''
-    required: false
-    default: 'string'
+    default: 2      
   useToken: 
     description: 'add a unique token to name'
     required: false

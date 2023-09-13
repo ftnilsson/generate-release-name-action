@@ -1,6 +1,6 @@
-# Hello world javascript action
+# Generate release name action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action generate a release name tag can be used to tag a release.
 
 ## Inputs
 
@@ -11,10 +11,6 @@ the delimiter that is used between words. Default `"-"`.
 ### `length`
 
 The number of words for the release name. Default `2`.
-
-### `theme`
-
-Set the theme to use theme to use string | 'baddies' | 'starwars' | 'animals''. Default `"string"`.
 
 ### `useToken`
 
