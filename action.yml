@@ -1,5 +1,9 @@
 name: 'Genarate Release Name Action'
 description: 'generate awesome release names'
+branding:
+  icon: 'tag'
+  color: 'purple'
+
 inputs:
   delimiter:
     description: 'word delimiter'
