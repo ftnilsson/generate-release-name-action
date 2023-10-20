@@ -1,4 +1,4 @@
-name: 'Genarate Release Name Action'
+name: 'awesome-release-name-action'
 description: 'generate awesome release names'
 branding:
   icon: 'tag'
