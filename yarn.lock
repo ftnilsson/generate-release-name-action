@@ -113,10 +113,10 @@
   dependencies:
     "@octokit/openapi-types" "^12.11.0"
 
-awesome-release-name-generator@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/awesome-release-name-generator/-/awesome-release-name-generator-1.0.1.tgz"
-  integrity sha512-6JRmh7YYeRewkrBv4hZtDHa5s8ekXsDCbguOE+fYkuBAd/Jyqp+OU4wneIpWFb4dkZ8yCWDTnma2oUmhSyNlhA==
+awesome-release-name-generator@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/awesome-release-name-generator/-/awesome-release-name-generator-2.0.1.tgz#795f023e4404e06765c20b13adf3ca2ca87d1003"
+  integrity sha512-emAjsj+pYNlFCYBGT1Q4sO4hVQHlnet+SzZ6mukJVI+3RluiZxYBWU8NJwgb3EllMczvk49iwx+7PFcEy70qvw==
 
 before-after-hook@^2.2.0:
   version "2.2.3"
