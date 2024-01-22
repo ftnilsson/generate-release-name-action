@@ -22,6 +22,6 @@
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
     "awesome-release-name-generator": "^1.0.1",
-    "node": "^21.0.0"
+    "node": "^21.6.0"
   }
 }

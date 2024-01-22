@@ -145,10 +145,10 @@ node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-node@^21.0.0:
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-21.0.0.tgz#f10020323bcc0e5819d8edc8bfc050422aa951ed"
-  integrity sha512-k0wCk1CXe+Bp6sDniB6x52IKMaP849Ei01zA0U88/iOGLrX8jnkyfCThlRqNrHT8hL0mG/OAU+8Z87N9atVRQQ==
+node@^21.6.0:
+  version "21.6.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-21.6.0.tgz#29cb65b08e6c40f21b77f13293c3af7548689209"
+  integrity sha512-9kaKu3UjMmJZ8o9o9LjUsFOOA5OF4f+d6ADPvf+/4E3R0cUvnx6PIU/6DVPxp3OjIMbF9Nmsez0ulM7QEJPvMw==
   dependencies:
     node-bin-setup "^1.0.0"
 
