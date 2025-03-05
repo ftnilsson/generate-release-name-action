@@ -29,7 +29,10 @@ Your awesome release name
 ## Example usage
 
 ```yaml
-uses: actions/generate-release-name-action@e76147da8e5c81eaf017dede5645551d4b94427b
+uses: ftnilsson/generate-release-name-action@latest # generate-release-name-action@3.0.6
 with:
   length: 2
+  useToken: 'false'
+  delimtier: '-'
+  capitalize: 'true'
 ```
