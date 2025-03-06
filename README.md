@@ -31,8 +31,8 @@ Your awesome release name
 ```yaml
 uses: ftnilsson/generate-release-name-action@latest # generate-release-name-action@3.0.6
 with:
+  delimtier: '-'
   length: 2
   useToken: 'false'
-  delimtier: '-'
   capitalize: 'true'
 ```

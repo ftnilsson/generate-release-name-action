@@ -21,10 +21,6 @@ inputs:
     description: 'capitalise words'
     required: false
     default: 'false' 
-  debug:
-    description: 'print debug statements'
-    required: false
-    default: 'false' 
   
 outputs:
   release-name: # the output

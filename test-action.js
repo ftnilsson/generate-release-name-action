@@ -10,12 +10,10 @@ function run() {
                 case 'delimiter':
                     return '-';
                 case 'length':
-                    return '3';
+                    return '2';
                 case 'useToken':
                     return 'true';
                 case 'capitalize':
-                    return 'true';
-                case 'debug':
                     return 'false';
                 default:
                     return '';

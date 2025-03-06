@@ -2,27 +2,26 @@ const core = require("@actions/core");
 const generator = require("./lib/generateReleaseName")
 
 async function run() {
-  try {
     // inputs defined in action metadata file
     const delimiter = core.getInput("delimiter");
-    const length = core.getInput("length");
-    const useToken = core.getInput("useToken");
-    const capitalize = core.getInput("capitalize");
-    let debug = core.getInput("debug");
-    debug = debug ? debug.toLowerCase() === 'true' : false;
+    const lengthStr = core.getInput("length");
+    const useTokenStr = core.getInput("useToken");
+    const capitalizeStr = core.getInput("capitalize");
+    console.log(`input parameters before: ${delimiter} ${lengthStr} ${useTokenStr} ${capitalizeStr}`);
 
-    if (debug) {
-      console.log(
-        `input parameters: ${delimiter} ${length} ${useToken} ${capitalize}`
-      );
-    }
+
+  try {
+    const length = isNaN(parseInt(lengthStr)) ? 2 : parseInt(lengthStr);
+    const useToken = useTokenStr?.toLowerCase() === "true";
+    const capitalize = capitalizeStr?.toLowerCase() === "true";
+
+    console.log(`input parameters: ${delimiter} ${length} ${useToken} ${capitalize}`);
 
     var releaseName = generator(
       delimiter,
       length,
       useToken,
-      capitalize,
-      debug
+      capitalize
     );
 
     core.setOutput("release-name", releaseName);
@@ -31,12 +30,7 @@ async function run() {
     // const payload = JSON.stringify(github.context.payload, undefined, 2)
     // console.log(`The event payload: ${payload}`);
   } catch (error) {
-    if (debug) {
-      console.log(
-        `error: ${error.message} ${length} ${useToken} ${capitalize}`
-      );
-    }
-    core.setFailed(error.message);
+      core.setFailed(error.message);
   }
 }
 
