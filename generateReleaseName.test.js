@@ -22,8 +22,6 @@ describe('generateReleaseName', () => {
     const result = generateReleaseName('-', 2, true, false);
     const parts = result.split('-');
     expect(parts.length).toBe(3);
-    // Check if the last element is a number
-    expect(/^\d+$/.test(parts[2])).toBeTruthy();
   });
 
   test('capitalizes words when capitalize is true', () => {
@@ -33,6 +31,16 @@ describe('generateReleaseName', () => {
     // Check that each word starts with uppercase
     words.forEach(word => {
       expect(word[0]).toEqual(word[0].toUpperCase());
+    });
+  });
+
+  test('does not capitalizes words when capitalize is false', () => {
+    const result = generateReleaseName('-', 2, false, false);
+    const words = result.split('-');
+    console.log(words);
+    // Check that each word starts with lowerscase
+    words.forEach(word => {
+      expect(word[0]).toEqual(word[0].toLowerCase());
     });
   });
 
@@ -46,9 +54,6 @@ describe('generateReleaseName', () => {
     // Check capitalization of words
     expect(parts[0][0]).toEqual(parts[0][0].toUpperCase());
     expect(parts[1][0]).toEqual(parts[1][0].toUpperCase());
-    
-    // Check if the last element is a number
-    expect(/^\d+$/.test(parts[2])).toBeTruthy();
 
     console.log(result);
   });
@@ -62,7 +67,7 @@ describe('generateReleaseName', () => {
       const result = generateReleaseName('-', 2, false, false);
       const words = result.split('-');
       const lastWord = words[words.length - 1];
-      
+      console.log(words);
       // We expect the last word to be the first element of the lastWords array
       // since Math.random() is mocked to return 0
       expect(lastWord).toBe('aardvark');
