@@ -1,6 +1,6 @@
 {
   "name": "release-name-action",
-  "version": "3.0.8",
+  "version": "1.0.0",
   "description": "generate awesome release names",
   "main": "index.js",
   "engines": {
