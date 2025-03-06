@@ -21,10 +21,14 @@ inputs:
     description: 'capitalise words'
     required: false
     default: 'false' 
+  debug:
+    description: 'print debug statements'
+    required: false
+    default: 'false' 
   
 outputs:
   release-name: # the output
     description: 'your new release name'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'
