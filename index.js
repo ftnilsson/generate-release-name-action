@@ -40,4 +40,6 @@ async function run() {
   }
 }
 
+run();
+
 exports.run = run;
