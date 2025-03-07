@@ -29,7 +29,7 @@ Your awesome release name
 ## Example usage
 
 ```yaml
-uses: ftnilsson/generate-release-name-action@latest # generate-release-name-action@3.0.6
+uses: ftnilsson/generate-release-name-action@latest # generate-release-name-action@1.0.1
 with:
   delimtier: '-'
   length: 2
