@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/ftnilsson/release-name-action#readme",
   "dependencies": {
-    "@actions/core": "^3.0.0",
-    "@actions/github": "^7.0.0"    
+   "@actions/core": "^3.0.2",
+    "@actions/github": "^9.0.0"    
   },
   "devDependencies": {
     "jest": "^30.2.0"
