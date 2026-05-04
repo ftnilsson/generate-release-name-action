@@ -1,5 +1,7 @@
 # Generate release name action
 
+[![CI](https://github.com/ftnilsson/generate-release-name-action/actions/workflows/ci.yml/badge.svg)](https://github.com/ftnilsson/generate-release-name-action/actions/workflows/ci.yml)
+
 This action generate a release name tag can be used to tag a release.
 
 ## Inputs
